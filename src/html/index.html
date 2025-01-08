@@ -7,5 +7,26 @@
 </head>
 <body>
     <h1>Hello, it's a main page</h1>
+    <form id="form">
+        <div>
+            <label for="file-title">Enter the file name:</label>
+            <input 
+                type="text" 
+                name="file-title" 
+                id="file-title" 
+                pattern="^.*\.txt$" 
+                title="This field must be a file name, e.g. file-name.txt"
+            >
+        </div>
+
+        <div><label for="file-text">Edit file content:</label>
+        <textarea name="file-text" id="file-text">
+            This is a textarea. You can write whatever you want here.
+        </textarea></div>
+
+        <button type="submit">I'm a submit button!</button>
+    </form>
+    <p id="log"></p>
+    <script src="../main.js"></script>
 </body>
 </html>
